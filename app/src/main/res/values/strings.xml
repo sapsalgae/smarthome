@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sweetHome</string>
+    <string name="title_activity_alarm_list">AlarmListActivity</string>
+    <string name="title_activity_doorlock">DoorlockActivity</string>
+</resources>
