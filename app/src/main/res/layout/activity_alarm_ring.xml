@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sweethome.AlarmRingActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alarm_ring_background_halloween"/>
+
+    <com.shitij.goyal.slidebutton.SwipeButton
+        android:id="@+id/swipeOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000"
+        android:text="OFF ???"
+        android:textColor="#FF00FF"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        app:gradient_color_1="#289F2B"
+        app:gradient_color_2="#79af5d"
+        app:gradient_color_3="#e96251"
+        app:threshold="0.9"
+        app.swipe_mode="mirror"
+        app.gradient_color_2_width="100dp"
+        app:after_confirmation_background="#e96251"
+        app:button_confirm_text="confirmed!"
+        app:button_swipe_text="OFF!!!"/>
+        <!-- android:drawableTop="@drawable/AlarmOff2"-->
+
+    <com.shitij.goyal.slidebutton.SwipeButton
+        android:id="@+id/swipeOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="+ 5min ???"
+        android:textColor="#00FF00"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        app:gradient_color_1="#289F2B"
+        app:gradient_color_2="#79af5d"
+        app:gradient_color_3="#e96251"
+        app:threshold="0.9"
+        app.swipe_mode="mirror"
+        app.gradient_color_2_width="100dp"
+        app:after_confirmation_background="#e96251"
+        app:button_confirm_text="confirmed!"
+        app:button_swipe_text="OK!!!"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swipeOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:text="LIGHT" />
+
+</RelativeLayout>
